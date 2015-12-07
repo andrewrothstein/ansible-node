@@ -1,0 +1,31 @@
+---
+# tasks file for node
+- name: downloading node...
+  get_url: url={{node_url}} dest='/tmp/{{node_tgz}}'
+
+- name: unarchive....
+  unarchive: copy=no src='/tmp/{{node_tgz}}' dest='/opt'
+
+- name: linking node...
+  file: >-
+    src=/opt/{{node_name}}
+    dest=/opt/node
+    state=link
+    owner=root
+    group=root
+
+- name: adding node to the default path...
+  copy: >-
+    src=etc/profile.d/node.sh
+    dest=/etc/profile.d/node.sh
+    owner=root
+    group=root
+    mode=0644
+
+- name: configure global npm path
+  command: npm -g config set prefix /opt/node
+    
+- name: update npm globally...
+  command: /opt/node/bin/npm install -g {{item}}
+  with_items:
+    - npm@latest

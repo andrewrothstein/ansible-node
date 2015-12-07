@@ -1,0 +1,5 @@
+---
+# defaults file for node
+node_ver : '4.2.3'
+node_platform : 'linux-x64'
+node_mirror : 'https://nodejs.org/dist'
