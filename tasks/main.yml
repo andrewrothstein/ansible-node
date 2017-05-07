@@ -32,7 +32,7 @@
     - f: node.sh
       d: /etc/profile.d
       m: '0644'
-  copy:
+  template:
     src: '{{item.f}}.j2'
     dest: '{{item.d}}/{{item.f}}'
     mode: '{{item.m}}'
