@@ -16,3 +16,4 @@ node_checksums:
   linux-x64: sha256:62b35635c648befde8bf534b6086f7416b8c1a3ac0ff8a99c2d6773722829a0e
   linux-x86: sha256:cf0413a5119c8460215b932dd69449b33238538b0a86e4a7805747073a2be9aa
 
+node_parent_install_dir: /usr/local
