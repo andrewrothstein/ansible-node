@@ -1,5 +1,18 @@
 ---
 # defaults file for node
-node_ver : '4.2.3'
-node_platform : 'linux-x64'
-node_mirror : 'https://nodejs.org/dist'
+node_ver : '7.9.0'
+node_platform : linux-x64
+node_mirror : https://nodejs.org/dist
+
+# http://nodejs.org/dist/v7.9.0/SHASUMS256.txt
+node_checksums:
+  darwin-x64: sha256:fbeff9aa20adfb69e0a2977578713ac0a33d20d895816af4c9eb9f75aa2b0c31
+  linux-arm64: sha256:97a4fdf9bdce13e6ff42109ac75564b480586203dbd9c621fa801f53db94484d
+  linux-armv6l: sha256:c3058ba99f18bf8db7798a171a0709fc3e4b1c1f6d80f0673496ac325c9a1911
+  linux-armv7l: sha256:18489a7cb44ddf91fdf7ec802a9cd2153fd00af22ed8124ae907e15613c1f592
+  linux-ppc64le: sha256:8e80dd4f2fea8864d724d1ab61fca8476a05ae4c4423fa813d3d8b1ae72f6593
+  linux-ppc64: sha256:68e634269c5872f58338f812dcdb5e879acf15dfd2ed7a970a102d932dc7e620
+  linux-s390x: sha256:7ad687ca378bfbd693bd4dc0f6bd81bd85318d97b28ad9316b4e30d4e98f9211
+  linux-x64: sha256:62b35635c648befde8bf534b6086f7416b8c1a3ac0ff8a99c2d6773722829a0e
+  linux-x86: sha256:cf0413a5119c8460215b932dd69449b33238538b0a86e4a7805747073a2be9aa
+

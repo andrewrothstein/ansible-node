@@ -1,24 +1,28 @@
 ---
 galaxy_info:
   author: Andrew Rothstein
-  description: node.js role
+  description: installs nodejs
   company: BlackRock
   license:
     - MIT
-  min_ansible_version: 1.2
+  min_ansible_version: 2.0
   platforms:
     - name: EL
       versions:
-        - 7
+        - all
     - name: Fedora
       versions:
-        - 21
+        - all
     - name: Ubuntu
       versions:
-        - trusty
-
-  categories:
+        - all
+    - name: Alpine
+      versions:
+        - all
+  galaxy_tags:
     - development
 
-dependencies: []
+dependencies:
+  - role: andrewrothstein.unarchive-deps
+    version: v1.0.8
   

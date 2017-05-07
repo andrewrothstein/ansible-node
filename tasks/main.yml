@@ -1,31 +1,39 @@
 ---
-# tasks file for node
 - name: downloading node...
-  get_url: url={{node_url}} dest='/tmp/{{node_tgz}}'
+  become: yes
+  become_user: root
+  get_url:
+    url: '{{node_tgz_url}}'
+    dest: /tmp/{{node_tgz}}
+    mode: 0644
+    checksum: '{{node_checksum}}'
 
 - name: unarchive....
-  unarchive: copy=no src='/tmp/{{node_tgz}}' dest='/opt'
+  become: yes
+  become_user: root
+  unarchive:
+    copy: no
+    src: /tmp/{{node_tgz}}
+    dest: '{{node_parent_install_dir}}'
+    creates: '{{node_install_dir}}'
 
 - name: linking node...
-  file: >-
-    src=/opt/{{node_name}}
-    dest=/opt/node
-    state=link
-    owner=root
-    group=root
+  become: yes
+  become_user: root
+  file: 
+    src: '{{node_install_dir}}'
+    dest: '{{node_link_dir}}'
+    state: link
 
 - name: adding node to the default path...
-  copy: >-
-    src=etc/profile.d/node.sh
-    dest=/etc/profile.d/node.sh
-    owner=root
-    group=root
-    mode=0644
-
-- name: configure global npm path
-  command: npm -g config set prefix /opt/node
-    
-- name: update npm globally...
-  command: /opt/node/bin/npm install -g {{item}}
+  become: yes
+  become_user: root
   with_items:
-    - npm@latest
+    - f: node.sh
+      d: /etc/profile.d
+      m: '0644'
+  copy:
+    src: '{{item.f}}.j2'
+    dest: '{{item.d}}/{{item.f}}'
+    mode: '{{item.m}}'
+
