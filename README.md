@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/andrewrothstein/ansible-node.svg?style=svg)](https://circleci.com/gh/andrewrothstein/ansible-node)
+[![Build Status](https://travis-ci.org/andrewrothstein/ansible-node.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-node)
 andrewrothstein.node
 =========
 
