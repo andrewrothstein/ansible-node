@@ -1,20 +1,20 @@
 ---
 # defaults file for node
-node_ver : '8.1.0'
+node_ver : '8.1.1'
 node_platform : linux-x64
 node_mirror : https://nodejs.org/dist
 
-# curl -sSL http://nodejs.org/dist/v8.1.0/SHASUMS256.txt | fgrep node- | fgrep tar.gz
+# curl -sSL http://nodejs.org/dist/v8.1.1/SHASUMS256.txt | fgrep node- | fgrep tar.gz
 node_checksums:
-  darwin-x64: sha256:08af5f1a7441728cabf9b11af25da28ee1725903524968dd9621b885b13303c7
-  linux-arm64: sha256:33c09d04b5e2637feda241e1c727b10249ed7114ad7807f8b70cbd8414747649
-  linux-armv7l: sha256:12d75aa7d875115e03e62b1e65aba77902d9c810bfb81fe8c379c5667d8fa1e1
-  linux-ppc64le: sha256:d230f546a8162236bc4272013a53d8bc86b72c40fe94e972b39ac74ed0563eb8
-  linux-ppc64: sha256:84654502cea0228cc427497ab6166b8bf74f368bf61336f1a18ec82ec8dd811a
-  linux-s390x: sha256:01068a92c640e929ad6b41bfaa896edab5d774e9994e6dd27b7bdb3684daef78
-  linux-x64: sha256:b53d6ad443f970d62a61d927bd28d63dcd2e19520e6e767bc6cc44f2cd8a4885
-  linux-x86: sha256:26dfe0320634254c9e81a6535014a4860bed72c3c1dbd5b040405e4b3a872476
-  sunos-x64: sha256:8f430673b416ff32366fcba5a2aad7cd8613d2ff042298da2eaad08ef90a7373
-  sunos-x86: sha256:925cff411b8bce74a0043b7e8a32bcbeb0a29fdbb89426f3e83e15a6f78d032f
+  aix-ppc64: sha256:3f39c72b597a5810e4b5a510feec11a78f943e4c06c73e160558f7e7614362c9
+  darwin-x64: sha256:2f67890a5a46564672cfd4522cc00c7ac04d307e6a942ae1ad38b6aee94c29e2
+  linux-arm64: sha256:69cc375ef84ea79736b491ff779e8ed07359cf27c943dcae41292094e0b0b79f
+  linux-ppc64le: sha256:48a249314bed9f0c4837464696d171bba47c787eff0bcdb452d2b8e2bdbcfcb2
+  linux-ppc64: sha256:4f950720886667976ced945a46b169e8775fd6e108008184567bb648f46823a8
+  linux-s390x: sha256:4041a25373c5fe68a660800785ab914a6971e1caafd22dfb8869ecd01c338081
+  linux-x64: sha256:7717495688c8e332b916cfc51fdb4773d468018ccd0b104ae524ae5050426d4d
+  linux-x86: sha256:a1f6c650b9c2d69a1b4dfec4ea4ead39a62867c413c479cfe70fb3152206bea4
+  sunos-x64: sha256:1f6f9d990ca82920e00ed221391013c87de86b56417d4871dd43424842a64267
+  sunos-x86: sha256:5a1ca06a07354bff17c618688ebc2950ed79236bff256d23df2952f181c94ece
 
 node_parent_install_dir: /usr/local

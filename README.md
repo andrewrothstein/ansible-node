@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-node.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-node)
 andrewrothstein.node
 =========
+[![Build Status](https://travis-ci.org/andrewrothstein/ansible-node.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-node)
 
 Installs [nodejs](https://nodejs.org).
 
