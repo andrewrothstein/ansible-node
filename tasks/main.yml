@@ -37,3 +37,10 @@
     dest: '{{item.d}}/{{item.f}}'
     mode: '{{item.m}}'
 
+- name: cleanup...
+  become: yes
+  become_user: root
+  when: node_cleanup
+  file:
+    path: /tmp/{{node_tgz}}
+    state: absent

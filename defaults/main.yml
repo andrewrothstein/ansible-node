@@ -18,3 +18,5 @@ node_checksums:
   sunos-x86: sha256:5a1ca06a07354bff17c618688ebc2950ed79236bff256d23df2952f181c94ece
 
 node_parent_install_dir: /usr/local
+
+node_cleanup: False
