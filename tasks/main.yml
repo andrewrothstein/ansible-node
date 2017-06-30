@@ -20,7 +20,7 @@
 - name: linking node...
   become: yes
   become_user: root
-  file: 
+  file:
     src: '{{node_install_dir}}'
     dest: '{{node_link_dir}}'
     state: link
