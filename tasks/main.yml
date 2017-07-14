@@ -12,7 +12,7 @@
   become: yes
   become_user: root
   unarchive:
-    copy: no
+    remote_src: no
     src: /tmp/{{node_tgz}}
     dest: '{{node_parent_install_dir}}'
     creates: '{{node_install_dir}}'
