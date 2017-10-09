@@ -1,23 +1,22 @@
 ---
 # defaults file for node
-node_ver : '8.5.0'
+node_ver : '8.6.0'
 node_platform : linux-x64
 node_mirror : https://nodejs.org/dist
 
-# curl -sSL http://nodejs.org/dist/v8.5.0/SHASUMS256.txt | fgrep node- | fgrep tar.gz
+# curl -sSL http://nodejs.org/dist/v8.6.0/SHASUMS256.txt | fgrep node- | fgrep tar.gz
 node_checksums:
-  aix-ppc64: sha256:5555ac88cdf15b0984efb87a81b6b692ad2a86711516453b8e8fd4923003b578
-  darwin-x64: sha256:0c8d4c4d90f858a19a29fe1ae7f42b2b7f1a4d3caaa25bea2e08479c00ebbd5f
-  linux-arm64: sha256:09004f9cc8039918e48ce846173dbd37e8673c9a6ada34bdb2e073534c70c9af
-  linux-armv6l: sha256:b6e8f2963c149a556ca2c3f2bfbd42a94ea2f51608e4d1873364b86c283c11da
-  linux-armv7l: sha256:3caed49e1367eb0a173646a9f82616401127a96cf8c569f5bf5a1dbfba74680c
-  linux-ppc64le: sha256:82dedda02b88df74d9f0f415d27da3b7ab584b1679b032d70773fe59a954f3c1
-  linux-ppc64: sha256:73e218998534f1c467591d474a9436ada1b6adc4977709f482393b6b00eedd6c
-  linux-s390x: sha256:09eb6157502faabf4e3d22fbe3c31245f5c9e14cf3ec9e25ba5ce1bc19ea84ee
-  linux-x64: sha256:0000710235e04553147b9c18deadc7cefa4297d4dce190de94cc625d2cf6b9ba
-  linux-x86: sha256:00ea2be3a78b1694439254d9c7232ce79748d5ff3e0d9bb2ff1fcd090d502d63
-  sunos-x64: sha256:6f8ce37b15c6e950d98b0523326484e5c23fd2df36f69c032f08790e90ad0f73
-  sunos-x86: sha256:495b3383d8116b8f82648754c2df54950f68205852b0094f95632da9c558ff68
+  aix-ppc64: sha256:8b7d261caa3b2d4a9dce44703ef84a4e6622bd0206c0a20e0958ca11b731fd15
+  darwin-x64: sha256:2c95f3194a92e8b37aab8895fbaeb1f5fabef3494600ef78a7b7e078dba9a7c9
+  linux-arm64: sha256:f5e9ca49e8f8c10f7f583c829191cbfab53216f5b5b6ec158b5eeb749d7079a2
+  linux-armv7l: sha256:f1fec31eb8f026f32e3e639c1c5ffd4b6aea34c3d040c9c129ea76c1f17079eb
+  linux-ppc64le: sha256:a73e95375d68c44d4517fc01a70307d54a59791dc2d2113fc7902f0a30ef6bb3
+  linux-ppc64: sha256:fc88d7e6cfd1f65197ef40918cc07c56998f60375c51f59447ba3a03f423e92b
+  linux-s390x: sha256:42697bf1c91a21a5d85ebe9dc80370c0aa6cc309082c3a1eee5e86c2fe2097dc
+  linux-x64: sha256:86d06a2ae2763cb68b17d77c889fa5d49975c653a85f3c4517bdbecdec165fbb
+  linux-x86: sha256:921d8dfe7185f2bc7c454533a1348256928c3be5d014c9799b6a33ec4d19f182
+  sunos-x64: sha256:0f1f6c4844594bcb942724529f74641b69bce317fb6f2ab5a3b2ca3dbf3dd3cc
+  sunos-x86: sha256:13a04d0914f0adc1aaf5c057d69e2fa3edd1ec8bbd5aad77830bd5563bd7a06a
 
 node_parent_install_dir: /usr/local
 
