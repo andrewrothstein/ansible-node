@@ -1,10 +1,23 @@
 ---
 # defaults file for node
-node_ver : '9.4.0'
+node_ver : '9.5.0'
 node_platform : linux-x64
 node_mirror : https://nodejs.org/dist
 
 node_checksums:
+  # curl -sSL http://nodejs.org/dist/v9.5.0/SHASUMS256.txt | fgrep node- | fgrep tar.gz
+  '9.5.0':
+    aix-ppc64: sha256:12b97b006a49248b65d679506ce17309ef2668f1887352f95eb74447a44657ed
+    darwin-x64: sha256:bc5c6eb21a90dbcaf90479838416c90524fe6d47e92c928ef57d7e96a54eb5fe
+    linux-arm64: sha256:08924ad820d6322e17cc0fbbc365000b76408a4f17c3ed3169b44d8c7448a617
+    linux-armv6l: sha256:c386a52c5c1a050c0b639ba9f979c0a1f418ed02855227358fcff4479f2348dc
+    linux-armv7l: sha256:b990ffdb862543a9a48ea28929272d66606b84899f124b40c5b100e0a3560bf7
+    linux-ppc64le: sha256:fa9229b6cd6d240c62183c1f109f533679f6cf142a580712cf5fe84f989ef584
+    linux-s390x: sha256:32765c6f357692fbe3d495bc0fe1bd1bdea88c243bb6244fe943a95590cc4e29
+    linux-x64: sha256:1002312e51cc8dcae788962d1971355f559bfbf7caef36cafda84339c0cd3dc6
+    linux-x86: sha256:d262b88071a2d5e6e0123914275353cec61e296e9b91925f3ef4a498b92dcc81
+    sunos-x64: sha256:2183de79b533fd3e23ca2d703eaddc649bda723c7c0ad41f56587e1bb786686c
+    sunos-x86: sha256:710345eb725c80e84ed3501ad7f2a8d2ecfad155addf89823e01430cb841e4b6
   # curl -sSL http://nodejs.org/dist/v9.4.0/SHASUMS256.txt | fgrep node- | fgrep tar.gz
   '9.4.0':
     aix-ppc64: sha256:8498d7e2c5293e697303c721ba465f34ea3898dea78ed9f33ab257a3da1eb3be
@@ -47,5 +60,3 @@ node_checksums:
     sunos-x86: sha256:9c9b535fab082990689360d7857ffc8aea5f0e371e28be132f98b9f07ff5be02
 
 node_parent_install_dir: /usr/local
-
-node_cleanup: False
