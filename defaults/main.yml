@@ -1,15 +1,27 @@
 ---
 # defaults file for node
-node_ver : '9.6.1'
+node_ver : '9.7.1'
 node_platform : linux-x64
 node_mirror : https://nodejs.org/dist
 
 node_checksums:
+  # curl -sSL http://nodejs.org/dist/v9.7.1/SHASUMS256.txt | fgrep node- | fgrep tar.gz
+  '9.7.1':
+    aix-ppc64: sha256:6b64c804bdc74e40be18378f84e2920f2bf0b7c64bd67873c73d7668868538df
+    darwin-x64: sha256:9ee0fa891787865b1eccc63ef56134e7de8bbf67b660a1dde9e309305a1dc3b0
+    linux-arm64: sha256:efd375f4b6b30429e7efb404a608e83f6022a02770a96f3a4124465304742fe8
+    linux-armv6l: sha256:9bf14493cbe6daabcac5bd141e46e510c1b8f3a84a4d54c0113d0bb89a3118f9
+    linux-armv7l: sha256:b16c864159e5c0b6c4115e05a81ee4e742fdb000b1d0d3ae31145671a8f9e866
+    linux-ppc64le: sha256:01a7f1aa834c640a0fddb2104889a51314a991f411c0a4dbf5cefe2aa4c93a5f
+    linux-s390x: sha256:2319b453a22c378ea2485c3977f2c332fc950ded3b268e8083d91cd238d39d52
+    linux-x64: sha256:3c075a25db6a5280ddd7d0edc6958a78597fa2ee9471eafca66cd1c6d5620ec5
+    linux-x86: sha256:04a35842fc600a58268fa65bd776b2a9e46528bb2dc619e2f32069411607abab
+    sunos-x64: sha256:61a46422f0eecfd3a38b6e9d065ff73a799dccb847f2cccec223b70612917d16
+    sunos-x86: sha256:18356123235a4ed9c51adb2f76491a49752d093b3fbfb178c007533173019ad0
   # curl -sSL http://nodejs.org/dist/v9.6.1/SHASUMS256.txt | fgrep node- | fgrep tar.gz
   '9.6.1':
     aix-ppc64: sha256:2c11c8796afe731a11ae0ea5898650881e86e557b8127cb5201ffb64cb3dd2d4
     darwin-x64: sha256:de486bc479817df2df1f91468e85e5da228a19101422c0c9a27153c1d0013c6d
-    headers: sha256:91967e96ffe9f0988495ee0d3b0ff41de1ba1ead4785d1526afb2cada8add134
     linux-arm64: sha256:b97dc8ebf084dea630b876e96e6838f735dd412a4b56c501c9c1e56ecfe9946c
     linux-armv6l: sha256:a8e1a7a4e15b2abad910aa3f947d1077c3f1461bac58469ecccc94103db19ae9
     linux-armv7l: sha256:c8b17b02828b78dcfa403707c638acea9676e96e0303e702119a24650f1142b6
@@ -19,7 +31,6 @@ node_checksums:
     linux-x86: sha256:6558bf0bad8333afc8ce00a8c3c6f5f62c7a39814f861ac96e42f57ab8c7161d
     sunos-x64: sha256:50b6c206c87c84724087cb519e38201a6a79ae72df3a4152074940d6de358221
     sunos-x86: sha256:c499d8243eb62a85f53e1a26e12d8c1dfc7e9bf85d4e9517a261de99720f7497
-    tar: sha256:d3ddf10fd009a73e84e9990a9b057ea7de6645b3513471a84f188301b27062cf
   # curl -sSL http://nodejs.org/dist/v9.5.0/SHASUMS256.txt | fgrep node- | fgrep tar.gz
   '9.5.0':
     aix-ppc64: sha256:12b97b006a49248b65d679506ce17309ef2668f1887352f95eb74447a44657ed
