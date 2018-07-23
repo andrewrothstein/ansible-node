@@ -23,5 +23,5 @@ galaxy_info:
     - development
 
 dependencies:
-  - src: andrewrothstein.unarchive-deps
+  - role: andrewrothstein.unarchive-deps
     version: v1.0.9
