@@ -1,10 +1,32 @@
 ---
 # defaults file for node
-node_ver: '10.8.0'
+node_ver: '10.10.0'
 node_platform: linux-x64
 node_mirror: https://nodejs.org/dist
 
 node_checksums:
+  # curl -sSL http://nodejs.org/dist/v10.10.0/SHASUMS256.txt | fgrep node- | fgrep tar.gz
+  '10.10.0':
+    aix-ppc64: sha256:d37fa6cb6ac55ae8b3529492a3fd0a0c3210b22a8acb6b6a7228907ae941cbb1
+    darwin-x64: sha256:00b7a8426e076e9bf9d12ba2d571312e833fe962c70afafd10ad3682fdeeaa5e
+    linux-arm64: sha256:0b83a3e427d076947b1deca943a48fba0258772f9c037de19d8b1261632d1385
+    linux-armv6l: sha256:716a66abd62e04dcd0f5c95dec3561e354712da7268e550a06bca1abc02710ea
+    linux-armv7l: sha256:4f6c18630bafa70a62505d54e4ac4d88fd3d5082875cb00d30edf394b0dd22a7
+    linux-ppc64le: sha256:0ad5ca19acb72a734d095848b132034457c7a57603fdbfd78e36eb68d76237cd
+    linux-s390x: sha256:ddbbda42c7183637558dce648f7805d11f04d39c1bd05d19157d1d1d8b4cbd04
+    linux-x64: sha256:789994b9ad5d2b274e949c268480a197d2af8861cb00911fc1d2ce4a01631e0d
+    sunos-x64: sha256:a591d590272786b4e6e734e3a07a88bd037dbd20c2d073b44097c06f0a2e7235
+  # curl -sSL http://nodejs.org/dist/v10.9.0/SHASUMS256.txt | fgrep node- | fgrep tar.gz
+  '10.9.0':
+    aix-ppc64: sha256:238afcb7b047691db3883b01a97f1ec458824d6d7d8412840319aeb82f3a3d5c
+    darwin-x64: sha256:3c4fe75dacfcc495a432a7ba2dec9045cff359af2a5d7d0429c84a424ef686fc
+    linux-arm64: sha256:de3f9625fd15acefce6123e7ac7e51f26b965315f0f64f00aef359d68677ec82
+    linux-armv6l: sha256:a404f0c10150cdfa2b43d3385591c20a85432a9cdd5f97a1ce96176e268f4230
+    linux-armv7l: sha256:ffa57690d5a563e13ae87f6f73b4ccd91b7ba018fabf3a015076d4d44cb85840
+    linux-ppc64le: sha256:7a61df1c5258fc91453fd38bb9f692b0761bcb57ebf3343b25a8b8f27b00ed96
+    linux-s390x: sha256:c9e211d0db4c88760251e72bd93da4a9d37be0fe54b270183aabc0b0c5a9135d
+    linux-x64: sha256:d061760884e4705adfc858eb669c44eb66cd57e8cdf6d5d57a190e76723af416
+    sunos-x64: sha256:f19ccc132c22e9facc1cd71c3f573aed650f31394efb37901f55a3be39e2801e
   # curl -sSL http://nodejs.org/dist/v10.8.0/SHASUMS256.txt | fgrep node- | fgrep tar.gz
   '10.8.0':
     aix-ppc64: sha256:b167433b33bddd5839c7ce2a703137b22a888f22a12d5a32b3eca6f78819f557
