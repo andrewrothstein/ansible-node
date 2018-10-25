@@ -1,10 +1,21 @@
 ---
 # defaults file for node
-node_ver: '10.12.0'
+node_ver: '11.0.0'
 node_platform: linux-x64
 node_mirror: https://nodejs.org/dist
 
 node_checksums:
+  # curl -sSL http://nodejs.org/dist/v11.0.0/SHASUMS256.txt | fgrep node- | fgrep tar.gz
+  '11.0.0':
+    aix-ppc64: sha256:e4599aa883f4402e6e140bfc01b13c1c46900927b568f6a855d9812bd07fbff7
+    darwin-x64: sha256:f70e12d246ba35e88c5c08a195215c5c913ce66c9d95d0bd21cc1d3e69904279
+    linux-arm64: sha256:e1b32dd0b41360dba18cc9919f359fd4df644cf8fc2a7687afe4454182fb4129
+    linux-armv6l: sha256:5f1ec0f8e0277292171b3a0eebadfbe8a703a6072e62a8d58d75df4d37438996
+    linux-armv7l: sha256:1d4d9f51d29070eb0033875cc6095f7432fe18fc5efa28abf2051af1b59c2592
+    linux-ppc64le: sha256:f1bd19c7e77cc94c15a797b2a7bb16b07aa0cbbbf83f33d5cc38afd72ba1b90e
+    linux-s390x: sha256:f15cd80af908cbc7f92db97deb8682b347ac179d51a436845832ea101396c807
+    linux-x64: sha256:e571de4e9b42fc411314d51ff730de37e3cef4d1d31cf4b84854e7a34a454cc7
+    sunos-x64: sha256:b5fd7016c96fec44081543472366d5bc0925ffa41824f60a3a09f7c979f2a7cb
   # curl -sSL http://nodejs.org/dist/v10.12.0/SHASUMS256.txt | fgrep node- | fgrep tar.gz
   '10.12.0':
     aix-ppc64: sha256:eb8cb1aa1f3ee9bc376d3654ce6410980e9c42b5d09eddca73f5d624bec22861
