@@ -2,7 +2,7 @@
 - name: checking for existing install
   become: yes
   stat:
-    path: '{{node_install_dir}}'
+    path: '{{ node_install_dir }}'
   changed_when: False
   register: node_binary
 - when: not node_binary.stat.exists
@@ -11,33 +11,33 @@
       become: yes
       become_user: root
       get_url:
-        url: '{{node_tgz_url}}'
-        dest: /tmp/{{node_tgz}}
+        url: '{{ node_tgz_url }}'
+        dest: /tmp/{{ node_tgz }}
         mode: 0644
-        checksum: '{{node_checksum}}'
+        checksum: '{{ node_checksum }}'
 
     - name: unarchive....
       become: yes
       become_user: root
       unarchive:
         remote_src: yes
-        src: /tmp/{{node_tgz}}
-        dest: '{{node_parent_install_dir}}'
-        creates: '{{node_install_dir}}'
+        src: /tmp/{{ node_tgz }}
+        dest: '{{ node_parent_install_dir }}'
+        creates: '{{ node_install_dir }}'
 
     - name: linking node...
       become: yes
       become_user: root
       file:
-        src: '{{node_install_dir}}'
-        dest: '{{node_link_dir}}'
+        src: '{{ node_install_dir }}'
+        dest: '{{ node_link_dir }}'
         state: link
   always:
     - name: cleanup...
       become: yes
       become_user: root
       file:
-        path: /tmp/{{node_tgz}}
+        path: /tmp/{{ node_tgz }}
         state: absent
 
 - name: adding node to the default path...
@@ -48,6 +48,6 @@
       d: /etc/profile.d
       m: '0644'
   template:
-    src: '{{item.f}}.j2'
-    dest: '{{item.d}}/{{item.f}}'
-    mode: '{{item.m}}'
+    src: '{{ item.f }}.j2'
+    dest: '{{ item.d }}/{{ item.f }}'
+    mode: '{{ item.m }}'
