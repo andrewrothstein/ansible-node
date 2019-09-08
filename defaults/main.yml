@@ -1,10 +1,32 @@
 ---
 # defaults file for node
-node_ver: '12.9.1'
+node_ver: '12.10.0'
 node_platform: linux-x64
 node_mirror: https://nodejs.org/dist
 
 node_checksums:
+  # http://nodejs.org/dist/v12.10.0/SHASUMS256.txt
+  '12.10.0':
+    # http://nodejs.org/dist/v12.10.0/node-v12.10.0-aix-ppc64.tar.gz
+    aix-ppc64: sha256:c5058a0fcbd0c9f8d49b64aa573ef151460f9de142a94479b2eda7d077d9de37
+    # http://nodejs.org/dist/v12.10.0/node-v12.10.0-darwin-x64.tar.gz
+    darwin-x64: sha256:4c16d1f6454f5dc3977ad00cea123792b8d4e1d6d1bf42bbc82a4202039a5971
+    # http://nodejs.org/dist/v12.10.0/node-v12.10.0-linux-arm64.tar.gz
+    linux-arm64: sha256:fd117a6ed22f493900fabdc7881fee50c7661c0eed88ae10c1139fa0d6c72535
+    # http://nodejs.org/dist/v12.10.0/node-v12.10.0-linux-armv7l.tar.gz
+    linux-armv7l: sha256:79b2f3d4eeffdf67e175143e032a1e38d6757dce0f361c064a2034ba9bbd69af
+    # http://nodejs.org/dist/v12.10.0/node-v12.10.0-linux-ppc64le.tar.gz
+    linux-ppc64le: sha256:5c4ca2b8b3150f6c56c6b2fc3cb7d316f1f0c3cb5650ff87922580f4c5230bd7
+    # http://nodejs.org/dist/v12.10.0/node-v12.10.0-linux-s390x.tar.gz
+    linux-s390x: sha256:dd0462f45231b0032c2cd6f26350e31cd1e26bba3a629d61cece6ff17c6ef32d
+    # http://nodejs.org/dist/v12.10.0/node-v12.10.0-linux-x64.tar.gz
+    linux-x64: sha256:3de23fd9f2145ff76d0583e7f57aa4ccead58b3fb991e215f862e779c9cdf151
+    # http://nodejs.org/dist/v12.10.0/node-v12.10.0-sunos-x64.tar.gz
+    sunos-x64: sha256:460db7890a8aa4171361d5e9e3fb57c4e8b2fb65cdb7c0c1d165fe06e228f4cb
+    # http://nodejs.org/dist/v12.10.0/node-v12.10.0-win-x64.zip
+    win-x64: sha256:de341476711c71f82d06fabcc9874c1ff9e865fd7274334d64a67b1e31a53fd0
+    # http://nodejs.org/dist/v12.10.0/node-v12.10.0-win-x86.zip
+    win-x86: sha256:16028bf616dfb49bcc42c1955f2d1eede0f0420df8289cbb34ee332f144f7a4b
   # http://nodejs.org/dist/v12.9.1/SHASUMS256.txt
   '12.9.1':
     # http://nodejs.org/dist/v12.9.1/node-v12.9.1-aix-ppc64.tar.gz

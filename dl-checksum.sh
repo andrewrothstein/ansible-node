@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VER=${1:-12.9.1}
+VER=${1:-12.10.0}
 DIR=~/Downloads
 MIRROR=http://nodejs.org/dist/v${VER}
 
