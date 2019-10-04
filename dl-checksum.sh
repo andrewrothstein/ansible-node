@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-VER=${1:-12.10.0}
+VER=${1:-12.11.1}
 DIR=~/Downloads
 MIRROR=http://nodejs.org/dist/v${VER}
 
@@ -14,15 +14,15 @@ fi
 
 dl()
 {
-    OS=$1
-    ARCH=$2
-    ARCHIVETYPE=$3
-    PLATFORM=${OS}-${ARCH}
-    FILE=node-v${VER}-${PLATFORM}.${ARCHIVETYPE}
-    URL=$MIRROR/$FILE
+    local os=$1
+    local arch=$2
+    local archive_type=$3
+    local platform=${os}-${arch}
+    local file=node-v${VER}-${platform}.${archive_type}
+    local url=$MIRROR/$file
 
-    printf "    # %s\n" $URL
-    printf "    %s: sha256:%s\n" $PLATFORM `fgrep $FILE $LCHECKSUMS | awk '{print $1}'`
+    printf "    # %s\n" $url
+    printf "    %s: sha256:%s\n" $platform `fgrep $file $LCHECKSUMS | awk '{print $1}'`
 }
 
 printf "  # %s\n" $RCHECKSUMS
