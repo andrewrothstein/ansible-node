@@ -1,6 +1,6 @@
 ---
 # defaults file for node
-node_ver: '12.11.1'
+node_ver: '12.12.0'
 node_platform: linux-x64
 node_mirror: https://nodejs.org/dist
 
@@ -821,3 +821,25 @@ node_checksums:
     win-x64: sha256:0bab4473cd2ba03511b8859ddf2202bb012d5c541f9d57b555a5bbbf101fcb35
     # http://nodejs.org/dist/v12.11.1/node-v12.11.1-win-x86.zip
     win-x86: sha256:c60aace3faaaa061206c02be730c4b8a2534e5dda6e1a987123548e747c0165a
+  # http://nodejs.org/dist/v12.12.0/SHASUMS256.txt
+  '12.12.0':
+    # http://nodejs.org/dist/v12.12.0/node-v12.12.0-aix-ppc64.tar.gz
+    aix-ppc64: sha256:b9ccb43e955656ad9c1653428890ce74a7a7ac25dad0218e9b4a259e57fc0d6f
+    # http://nodejs.org/dist/v12.12.0/node-v12.12.0-darwin-x64.tar.gz
+    darwin-x64: sha256:14a98237e8859bc22695719dbc2e9db5529a33ada0c6c377df4dc27b5622ffbb
+    # http://nodejs.org/dist/v12.12.0/node-v12.12.0-linux-arm64.tar.gz
+    linux-arm64: sha256:9c6ff84ad3be0fc79188cfa68b3fab9aedadf219ffb3821d4bf6d01308ed6621
+    # http://nodejs.org/dist/v12.12.0/node-v12.12.0-linux-armv7l.tar.gz
+    linux-armv7l: sha256:1251d6bffaf95fd88ca3bbeb83c9e6eb99b1b60022f9160092afc813b1440ca7
+    # http://nodejs.org/dist/v12.12.0/node-v12.12.0-linux-ppc64le.tar.gz
+    linux-ppc64le: sha256:8135e437f9537c1072a392718c4494037edde1a1eba44dd28c87002ba16b6d38
+    # http://nodejs.org/dist/v12.12.0/node-v12.12.0-linux-s390x.tar.gz
+    linux-s390x: sha256:511ceb963f079dc5c74528bb1018819ad0fdd00c98fb9782ff22fe2c22fd10f1
+    # http://nodejs.org/dist/v12.12.0/node-v12.12.0-linux-x64.tar.gz
+    linux-x64: sha256:4b46ffa368bc909fae2611a16daffd1d8c35a5284aea0bb7c45269e72f6638a2
+    # http://nodejs.org/dist/v12.12.0/node-v12.12.0-sunos-x64.tar.gz
+    sunos-x64: sha256:5239deac3a94cd872a5c360a0564f13ea6f5c01f1cc712c0040dfd535e4d4253
+    # http://nodejs.org/dist/v12.12.0/node-v12.12.0-win-x64.zip
+    win-x64: sha256:930e7bcd2ae5bcb1d4163c2adf09a392ed0e9a824b069d19daeb4f9f3430a195
+    # http://nodejs.org/dist/v12.12.0/node-v12.12.0-win-x86.zip
+    win-x86: sha256:aec1a9a9b0bdca80527405da9fa2dbec7e81e5b30d7be4846e43e256ea8fecfa
