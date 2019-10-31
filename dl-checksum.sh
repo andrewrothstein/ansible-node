@@ -1,39 +1,45 @@
 #!/usr/bin/env sh
-VER=${1:-12.12.0}
 DIR=~/Downloads
-MIRROR=http://nodejs.org/dist/v${VER}
-
-LCHECKSUMS=$DIR/node_${VER}_SHASUMS256.txt
-RCHECKSUMS=$MIRROR/SHASUMS256.txt
-
-if [ ! -e $LCHECKSUMS ];
-then
-    wget -q -O $LCHECKSUMS $RCHECKSUMS
-fi
-
+MIRROR=http://nodejs.org/dist
 
 dl()
 {
-    local os=$1
-    local arch=$2
-    local archive_type=$3
+    local ver=$1
+    local lchecksums=$2
+    local os=$3
+    local arch=$4
+    local archive_type=$5
     local platform=${os}-${arch}
-    local file=node-v${VER}-${platform}.${archive_type}
-    local url=$MIRROR/$file
+    local file=node-v${ver}-${platform}.${archive_type}
+    local url=$MIRROR/v${ver}/$file
 
     printf "    # %s\n" $url
-    printf "    %s: sha256:%s\n" $platform `fgrep $file $LCHECKSUMS | awk '{print $1}'`
+    printf "    %s: sha256:%s\n" $platform `fgrep $file $lchecksums | awk '{print $1}'`
 }
 
-printf "  # %s\n" $RCHECKSUMS
-printf "  '%s':\n" $VER
-dl aix ppc64 tar.gz
-dl darwin x64 tar.gz
-dl linux arm64 tar.gz
-dl linux armv7l tar.gz
-dl linux ppc64le tar.gz
-dl linux s390x tar.gz
-dl linux x64 tar.gz
-dl sunos x64 tar.gz
-dl win x64 zip
-dl win x86 zip
+dl_ver() {
+    local ver=$1
+    local lchecksums=$DIR/node_${ver}_SHASUMS256.txt
+    local rchecksums=$MIRROR/v${ver}/SHASUMS256.txt
+
+    if [ ! -e $lchecksums ];
+    then
+        wget -q -O $lchecksums $rchecksums
+    fi
+
+
+    printf "  # %s\n" $rchecksums
+    printf "  '%s':\n" $ver
+    dl $ver $lchecksums aix ppc64 tar.gz
+    dl $ver $lchecksums darwin x64 tar.gz
+    dl $ver $lchecksums linux arm64 tar.gz
+    dl $ver $lchecksums linux armv7l tar.gz
+    dl $ver $lchecksums linux ppc64le tar.gz
+    dl $ver $lchecksums linux s390x tar.gz
+    dl $ver $lchecksums linux x64 tar.gz
+    dl $ver $lchecksums sunos x64 tar.gz
+    dl $ver $lchecksums win x64 zip
+    dl $ver $lchecksums win x86 zip
+}
+
+dl_ver ${1:-13.0.0}
