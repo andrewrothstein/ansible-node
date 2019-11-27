@@ -1,7 +1,9 @@
 ---
 # defaults file for node
-node_ver: '13.0.1'
-node_platform: linux-x64
+node_ver: '13.2.0'
+node_os: linux
+node_arch: x64
+
 node_mirror: https://nodejs.org/dist
 
 node_parent_install_dir: /usr/local
@@ -887,3 +889,25 @@ node_checksums:
     win-x64: sha256:1a2552b630651e08e9027339f71a65fbe3944540f0875563ea25639a091e1f33
     # http://nodejs.org/dist/v13.0.1/node-v13.0.1-win-x86.zip
     win-x86: sha256:11ac1bb58a22356900873a1593230bcb12354c9118755cb17d1485e2b32b8660
+  # http://nodejs.org/dist/v13.2.0/SHASUMS256.txt
+  '13.2.0':
+    # http://nodejs.org/dist/v13.2.0/node-v13.2.0-aix-ppc64.tar.gz
+    aix-ppc64: sha256:9b5751453a3192a92def580c730302c549486644d8b665dd6fb60e39056bdcae
+    # http://nodejs.org/dist/v13.2.0/node-v13.2.0-darwin-x64.tar.gz
+    darwin-x64: sha256:2bcba358ef68ea21655728126c678063c60119e18e65d04f615d6b22dba8f7a5
+    # http://nodejs.org/dist/v13.2.0/node-v13.2.0-linux-arm64.tar.gz
+    linux-arm64: sha256:b1634a1c9eb8735b25ad21bce3ab5a86d7471982fe2523eeeaf9d831f807864b
+    # http://nodejs.org/dist/v13.2.0/node-v13.2.0-linux-armv7l.tar.gz
+    linux-armv7l: sha256:f3e918ac85d51d4e415c40b8c5c346a3b01c3154c78fa1ae0df67607eb82051c
+    # http://nodejs.org/dist/v13.2.0/node-v13.2.0-linux-ppc64le.tar.gz
+    linux-ppc64le: sha256:52ce1134960644e4c491bac9e20677c528b1eb7d197f78aa9e8a8b96168ae3dd
+    # http://nodejs.org/dist/v13.2.0/node-v13.2.0-linux-s390x.tar.gz
+    linux-s390x: sha256:12f83d6634c93f1f04e745dedbe8e658b784d7ab35b1de640919ab5241f5edc2
+    # http://nodejs.org/dist/v13.2.0/node-v13.2.0-linux-x64.tar.gz
+    linux-x64: sha256:dcf3954ecf6a34d65cab277d3565c654996b1d3e6d07cbbd98939cee0792c668
+    # http://nodejs.org/dist/v13.2.0/node-v13.2.0-sunos-x64.tar.gz
+    sunos-x64: sha256:c9c37c847877da602322623bdaf2d681b70b5ca1fe7afe4e035e06f4cc017228
+    # http://nodejs.org/dist/v13.2.0/node-v13.2.0-win-x64.zip
+    win-x64: sha256:e2866a8f53c45bb544d7b00aed1e5fddbbd7071bd331b02e66a6ce7c38c6918c
+    # http://nodejs.org/dist/v13.2.0/node-v13.2.0-win-x86.zip
+    win-x86: sha256:d1b91964ee50a1f9a0b2d757d5903a0955a3a1a81846a91b93eecdb70347b232

@@ -1,5 +1,6 @@
 ---
 # vars file for node
+node_platform: '{{ node_os }}-{{ node_arch }}'
 node_name: node-v{{node_ver}}-{{node_platform}}
 node_tgz: '{{node_name}}.tar.gz'
 node_tgz_url: '{{node_mirror}}/v{{node_ver}}/{{node_tgz}}'
