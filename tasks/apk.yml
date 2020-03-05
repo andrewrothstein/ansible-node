@@ -1,0 +1,9 @@
+---
+- name: "{{ ansible_distribution }} - Update {{ item }} installation"
+  apk:
+    name: "{{ item }}"
+    state: latest
+    update_cache: no
+  loop: 
+    - nodejs
+    - npm
