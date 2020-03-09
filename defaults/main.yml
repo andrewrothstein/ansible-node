@@ -1,6 +1,6 @@
 ---
 # defaults file for node
-node_ver: '13.9.0'
+node_ver: '13.10.1'
 node_os: linux
 node_arch: x64
 
@@ -1065,3 +1065,25 @@ node_checksums:
     win-x64: sha256:ec0a55bb703906494e738cd3d09e3274b34f0a3fbe207b9e67502092ed017500
     # http://nodejs.org/dist/v13.9.0/node-v13.9.0-win-x86.zip
     win-x86: sha256:3c6bfe1403d8cc9bfca24be497085a996fe1f03c6944a0cb6ecdb07f1d055c8b
+  # http://nodejs.org/dist/v13.10.1/SHASUMS256.txt
+  '13.10.1':
+    # http://nodejs.org/dist/v13.10.1/node-v13.10.1-aix-ppc64.tar.gz
+    aix-ppc64: sha256:6e0a311b0e8ef5fb3ede6745dc19fd2d37b6120b66a0fd3bcb82178361d2bc6f
+    # http://nodejs.org/dist/v13.10.1/node-v13.10.1-darwin-x64.tar.gz
+    darwin-x64: sha256:a6a66fdc79e70267fc191f10ee045793240974e1268fdea6c2d28afbc1d635e8
+    # http://nodejs.org/dist/v13.10.1/node-v13.10.1-linux-arm64.tar.gz
+    linux-arm64: sha256:2106cf90ddbe47957b7782caed787cf4927656087d28ec7eb11f0d44c49234e9
+    # http://nodejs.org/dist/v13.10.1/node-v13.10.1-linux-armv7l.tar.gz
+    linux-armv7l: sha256:cf02c306b2d789969e9cc9bd0990858ad3cfc96049a933b7dd66599ffe23cb8c
+    # http://nodejs.org/dist/v13.10.1/node-v13.10.1-linux-ppc64le.tar.gz
+    linux-ppc64le: sha256:a1d061a12dd7ab81e06bcd025ce31f58beef60369960553f351690778e991309
+    # http://nodejs.org/dist/v13.10.1/node-v13.10.1-linux-s390x.tar.gz
+    linux-s390x: sha256:67a5382cdc5c0820859eef3e01f22972fb2b72cebda1d5e908083e84eed4488a
+    # http://nodejs.org/dist/v13.10.1/node-v13.10.1-linux-x64.tar.gz
+    linux-x64: sha256:985cc834f3d95c0dc99ac6d7fa6ec7fd7aca74ec71ccc706650f59aec37b6384
+    # http://nodejs.org/dist/v13.10.1/node-v13.10.1-sunos-x64.tar.gz
+    sunos-x64: sha256:d9c71526ae520b7022fde8d5c8030c7c8d664b83f2e9326d001e15c1bb5f4821
+    # http://nodejs.org/dist/v13.10.1/node-v13.10.1-win-x64.zip
+    win-x64: sha256:f9d0aac273a44dbd52dd8cdb3d6c684b68b860d128af58d77a0c08f39f51f229
+    # http://nodejs.org/dist/v13.10.1/node-v13.10.1-win-x86.zip
+    win-x86: sha256:570c865afdd61ff1c08bae4fccd8a9efb6bee3dac13c9587848a4b5caf006b6c
