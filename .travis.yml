@@ -9,8 +9,6 @@ dist: xenial
 env:
 - OS=alpine_3.10
 - OS=alpine_3.11
-- OS=alpine_3.6
-- OS=alpine_3.7
 - OS=alpine_3.8
 - OS=alpine_3.9
 - OS=alpine_edge
