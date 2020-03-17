@@ -1,6 +1,6 @@
 ---
 # defaults file for node
-node_ver: '13.10.1'
+node_ver: '13.11.0'
 node_os: linux
 node_arch: x64
 
@@ -1087,3 +1087,25 @@ node_checksums:
     win-x64: sha256:f9d0aac273a44dbd52dd8cdb3d6c684b68b860d128af58d77a0c08f39f51f229
     # http://nodejs.org/dist/v13.10.1/node-v13.10.1-win-x86.zip
     win-x86: sha256:570c865afdd61ff1c08bae4fccd8a9efb6bee3dac13c9587848a4b5caf006b6c
+  # http://nodejs.org/dist/v13.11.0/SHASUMS256.txt
+  '13.11.0':
+    # http://nodejs.org/dist/v13.11.0/node-v13.11.0-aix-ppc64.tar.gz
+    aix-ppc64: sha256:35ef7b13b8c5cee625d14a82a896401ccccc60f2299c63827c52e3aff27a7b5a
+    # http://nodejs.org/dist/v13.11.0/node-v13.11.0-darwin-x64.tar.gz
+    darwin-x64: sha256:2d87989fb1e0d425667c5ca9893cb3ecfb30cd3344d543870246d65f8d9b892f
+    # http://nodejs.org/dist/v13.11.0/node-v13.11.0-linux-arm64.tar.gz
+    linux-arm64: sha256:c20c89664b5f06559f0aa2f0ad334d6d8157599b01101719e455b2b500a13c1a
+    # http://nodejs.org/dist/v13.11.0/node-v13.11.0-linux-armv7l.tar.gz
+    linux-armv7l: sha256:98c59faf01ddb868f3238c802ce420cd4d46f04b6181525e92fd4d728469a7cf
+    # http://nodejs.org/dist/v13.11.0/node-v13.11.0-linux-ppc64le.tar.gz
+    linux-ppc64le: sha256:103f759336fa74505d949c4cd0307e958b1eaf0ef71c36f0c147e3718af74322
+    # http://nodejs.org/dist/v13.11.0/node-v13.11.0-linux-s390x.tar.gz
+    linux-s390x: sha256:6a6f659c32dcbf5b86b97b0d330125b4a89344a0244b626b1274d4f839868128
+    # http://nodejs.org/dist/v13.11.0/node-v13.11.0-linux-x64.tar.gz
+    linux-x64: sha256:db9592a3e54c34fcf2252e6cf49780dda93cc175d7a27654a8971e1eb5f1f989
+    # http://nodejs.org/dist/v13.11.0/node-v13.11.0-sunos-x64.tar.gz
+    sunos-x64: sha256:cef81650f8b76b28cea3155b69af49ae87d64acfa5ce48d759925a04172b8d7a
+    # http://nodejs.org/dist/v13.11.0/node-v13.11.0-win-x64.zip
+    win-x64: sha256:dc93aa5a82988f741dca6f1869c7b1aeda6f339293d13a968279a6dc9fcc8dd0
+    # http://nodejs.org/dist/v13.11.0/node-v13.11.0-win-x86.zip
+    win-x86: sha256:38214897726f645799eee08ff537ea1c95daa967ead07b0bc61f0f30a247e1ce
