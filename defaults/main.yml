@@ -1,6 +1,6 @@
 ---
 # defaults file for node
-node_ver: '13.11.0'
+node_ver: '13.12.0'
 node_os: linux
 node_arch: x64
 
@@ -1109,3 +1109,25 @@ node_checksums:
     win-x64: sha256:dc93aa5a82988f741dca6f1869c7b1aeda6f339293d13a968279a6dc9fcc8dd0
     # http://nodejs.org/dist/v13.11.0/node-v13.11.0-win-x86.zip
     win-x86: sha256:38214897726f645799eee08ff537ea1c95daa967ead07b0bc61f0f30a247e1ce
+  # http://nodejs.org/dist/v13.12.0/SHASUMS256.txt
+  '13.12.0':
+    # http://nodejs.org/dist/v13.12.0/node-v13.12.0-aix-ppc64.tar.gz
+    aix-ppc64: sha256:fe07c84054befb425bb8e270337410ed0ce865f910d86e26f37c29d40554f709
+    # http://nodejs.org/dist/v13.12.0/node-v13.12.0-darwin-x64.tar.gz
+    darwin-x64: sha256:1fe3103610e8eb66ae71872ea1b4e868a638292a4e7ad0e41976a9fe417a09c7
+    # http://nodejs.org/dist/v13.12.0/node-v13.12.0-linux-arm64.tar.gz
+    linux-arm64: sha256:9c28226e84bd44f7309ffdd4deb022fb59479ef0386e82890cd19b02162940f3
+    # http://nodejs.org/dist/v13.12.0/node-v13.12.0-linux-armv7l.tar.gz
+    linux-armv7l: sha256:bcbae35d05ba7e59aa68fbcd8f78cfcd6034be35da3e1283b527ae0fae802e67
+    # http://nodejs.org/dist/v13.12.0/node-v13.12.0-linux-ppc64le.tar.gz
+    linux-ppc64le: sha256:e6e1cdf52b69d71d27b14a0fbc95e4c78a4486e830ff593420008567ae19f2cf
+    # http://nodejs.org/dist/v13.12.0/node-v13.12.0-linux-s390x.tar.gz
+    linux-s390x: sha256:d2596c532ce8056e4c6a633cbe0133390c6ca702ee110d4d6ee29b898d90e00a
+    # http://nodejs.org/dist/v13.12.0/node-v13.12.0-linux-x64.tar.gz
+    linux-x64: sha256:3e66b14bbeb9ea1ba129fae7c65374844f4ddaf1e48e2bc19b3b2570e158e362
+    # http://nodejs.org/dist/v13.12.0/node-v13.12.0-sunos-x64.tar.gz
+    sunos-x64: sha256:7536f4f921651274af805be08b7249c0ff4595f46599aecebff872e50f9ac268
+    # http://nodejs.org/dist/v13.12.0/node-v13.12.0-win-x64.zip
+    win-x64: sha256:de8445794ecbcfe895f4775417d1e2cc023e2212b1f5d4ff5cc0ed6875f7c911
+    # http://nodejs.org/dist/v13.12.0/node-v13.12.0-win-x86.zip
+    win-x86: sha256:33f5b57a8518efe5130daa48af7003f02771907b6efcc45d3a12b8612ed74408
