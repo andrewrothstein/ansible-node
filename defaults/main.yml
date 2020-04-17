@@ -1,6 +1,6 @@
 ---
 # defaults file for node
-node_ver: '13.12.0'
+node_ver: '13.13.0'
 node_os: linux
 node_arch: x64
 
@@ -1131,3 +1131,25 @@ node_checksums:
     win-x64: sha256:de8445794ecbcfe895f4775417d1e2cc023e2212b1f5d4ff5cc0ed6875f7c911
     # http://nodejs.org/dist/v13.12.0/node-v13.12.0-win-x86.zip
     win-x86: sha256:33f5b57a8518efe5130daa48af7003f02771907b6efcc45d3a12b8612ed74408
+  # http://nodejs.org/dist/v13.13.0/SHASUMS256.txt
+  '13.13.0':
+    # http://nodejs.org/dist/v13.13.0/node-v13.13.0-aix-ppc64.tar.gz
+    aix-ppc64: sha256:acaeb22af1eb81204d9b73a365bd2355b45625d36c341d9f4b2b3240b1998eac
+    # http://nodejs.org/dist/v13.13.0/node-v13.13.0-darwin-x64.tar.gz
+    darwin-x64: sha256:28ae2abedafb250a9bbe706650fd79d2b25273f6445adcc1d85c777359dc5390
+    # http://nodejs.org/dist/v13.13.0/node-v13.13.0-linux-arm64.tar.gz
+    linux-arm64: sha256:fd1a25910a77084ecd2f092f74a0bfb68526f219fbd07cec64beaf29c91619a1
+    # http://nodejs.org/dist/v13.13.0/node-v13.13.0-linux-armv7l.tar.gz
+    linux-armv7l: sha256:0fed3e5f42b69898cca326c17e94eb8f4b279058e5d49b00aa9fa1716c96b865
+    # http://nodejs.org/dist/v13.13.0/node-v13.13.0-linux-ppc64le.tar.gz
+    linux-ppc64le: sha256:b91babd63a606cb3d60d808b1505a1a0cde0da537c450abb494319963985da5a
+    # http://nodejs.org/dist/v13.13.0/node-v13.13.0-linux-s390x.tar.gz
+    linux-s390x: sha256:217cea0e9b485cc1a73e57c57a1a891459fc7c20038158a33972b6ce996983a1
+    # http://nodejs.org/dist/v13.13.0/node-v13.13.0-linux-x64.tar.gz
+    linux-x64: sha256:8272d2825b68be55ac48e6270ab9179a126306c914a6dfdf1f175d04e006131e
+    # http://nodejs.org/dist/v13.13.0/node-v13.13.0-sunos-x64.tar.gz
+    sunos-x64: sha256:cf33c2eda7cd2b83dbecde9753094af0eb3c15e094418632b9075a859b68c190
+    # http://nodejs.org/dist/v13.13.0/node-v13.13.0-win-x64.zip
+    win-x64: sha256:79f2a39c1047666f2bbf2efe53c069a38b8f6ef18d569bf338463aea1914b89d
+    # http://nodejs.org/dist/v13.13.0/node-v13.13.0-win-x86.zip
+    win-x86: sha256:a3b9b2ff87afcdc2ab4e5633b5ca8f33499c5d9cf3c403564239eb98737431c5
