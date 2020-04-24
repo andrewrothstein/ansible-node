@@ -37,9 +37,8 @@ dl_ver() {
     dl $ver $lchecksums linux ppc64le tar.gz
     dl $ver $lchecksums linux s390x tar.gz
     dl $ver $lchecksums linux x64 tar.gz
-    dl $ver $lchecksums sunos x64 tar.gz
     dl $ver $lchecksums win x64 zip
     dl $ver $lchecksums win x86 zip
 }
 
-dl_ver ${1:-13.13.0}
+dl_ver ${1:-14.0.0}
