@@ -41,4 +41,4 @@ dl_ver() {
     dl $ver $lchecksums win x86 zip
 }
 
-dl_ver ${1:-14.0.0}
+dl_ver ${1:-14.1.0}
