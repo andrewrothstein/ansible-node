@@ -1,6 +1,6 @@
 ---
 # defaults file for node
-node_ver: 14.5.0
+node_ver: 14.6.0
 node_os: linux
 node_arch: x64
 
@@ -1413,3 +1413,23 @@ node_checksums:
     win-x64: sha256:ab5728c85ece98210036fc9c38984fa2410a882dd99075b3d5bece58e4cc6ea2
     # http://nodejs.org/dist/v14.5.0/node-v14.5.0-win-x86.zip
     win-x86: sha256:f438018cd503e297905257c715e1848aef7041a938ab95fcd22ae70825411d5a
+  # http://nodejs.org/dist/v14.6.0/SHASUMS256.txt
+  '14.6.0':
+    # http://nodejs.org/dist/v14.6.0/node-v14.6.0-aix-ppc64.tar.gz
+    aix-ppc64: sha256:5a42400906c4e748930a90ee1137639876839394b5ebab4dbea96eac2fa32be7
+    # http://nodejs.org/dist/v14.6.0/node-v14.6.0-darwin-x64.tar.gz
+    darwin-x64: sha256:7907a18605b900ce977ff4c7e67f7507f937f85738659865d31779c3b2990756
+    # http://nodejs.org/dist/v14.6.0/node-v14.6.0-linux-arm64.tar.gz
+    linux-arm64: sha256:eb4f98efe22057a831415c2367416330878f0e1ad9a9bb5c25a6631031588075
+    # http://nodejs.org/dist/v14.6.0/node-v14.6.0-linux-armv7l.tar.gz
+    linux-armv7l: sha256:9e4ff9421102e61381133f71b536305a5f6befa6de62a44c4805f23fc3cb7b0c
+    # http://nodejs.org/dist/v14.6.0/node-v14.6.0-linux-ppc64le.tar.gz
+    linux-ppc64le: sha256:2cfac862890b8c70a0b74aa5f31a5d51571ec1cbe91de46fc82b079b7bde9bec
+    # http://nodejs.org/dist/v14.6.0/node-v14.6.0-linux-s390x.tar.gz
+    linux-s390x: sha256:b1114f7360babb5eca8e27fbc2556e9e73f0d423281dbe292f8d521b21359faf
+    # http://nodejs.org/dist/v14.6.0/node-v14.6.0-linux-x64.tar.gz
+    linux-x64: sha256:5e2c59200c86c37a0c800fe2cd2cfabc459f8a3ae3f83c3611483c485ad32e4f
+    # http://nodejs.org/dist/v14.6.0/node-v14.6.0-win-x64.zip
+    win-x64: sha256:57ea75a7ec70cc8158e6f9774f9728fb9e3d08212b1af3e206db2de46ca304ca
+    # http://nodejs.org/dist/v14.6.0/node-v14.6.0-win-x86.zip
+    win-x86: sha256:d7244b00e19404e74e33b2df1f066ec8260efc2bf312b9dfb3470878ac0f6af6
