@@ -1,5 +1,5 @@
 ---
-- name: checking for existing install
+- name: checking for existing install in {{ node_install_dir }}
   become: yes
   stat:
     path: '{{ node_install_dir }}'
@@ -7,39 +7,39 @@
   register: node_binary
 - when: not node_binary.stat.exists
   block:
-    - name: downloading node...
+    - name: downloading {{ node_tgz_url }}
       become: yes
       become_user: root
       get_url:
         url: '{{ node_tgz_url }}'
-        dest: /tmp/{{ node_tgz }}
+        dest: '{{ node_tmp_tgz }}'
         mode: 0644
         checksum: '{{ node_checksum }}'
 
-    - name: unarchive....
+    - name: unarchiving into {{ node_parent_install_dir }}
       become: yes
       become_user: root
       unarchive:
         remote_src: yes
-        src: /tmp/{{ node_tgz }}
+        src: '{{ node_tmp_tgz }}'
         dest: '{{ node_parent_install_dir }}'
         creates: '{{ node_install_dir }}'
 
-    - name: linking node...
-      become: yes
-      become_user: root
-      file:
-        src: '{{ node_install_dir }}'
-        dest: '{{ node_link_dir }}'
-        state: link
   always:
-    - name: cleanup...
+    - name: cleanup {{ node_tmp_tgz }}
       become: yes
       become_user: root
       file:
-        path: /tmp/{{ node_tgz }}
+        path: '{{ node_tmp_tgz }}'
         state: absent
 
+- name: linking {{ node_link_dir }} to {{ node_install_dir }}
+  become: yes
+  become_user: root
+  file:
+    src: '{{ node_install_dir }}'
+    dest: '{{ node_link_dir }}'
+    state: link
 - name: adding node to the default path...
   become: yes
   become_user: root
