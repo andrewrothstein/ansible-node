@@ -3,7 +3,7 @@
   roles:
     - role: '{{playbook_dir}}'
   tasks:
-    - command: /usr/local/node/bin/node --version
+    - command: sh -l -c 'node --version'
       register: node_test_output
     - debug:
         msg: '{{ node_test_output.stdout }}'
