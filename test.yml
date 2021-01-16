@@ -1,9 +1,9 @@
 ---
 - hosts: all
   roles:
-    - role: '{{playbook_dir}}'
+    - role: '{{ playbook_dir }}'
   tasks:
-    - command: sh -l -c 'node --version'
+    - command: /usr/local/node/bin/node --version
       register: node_test_output
     - debug:
         msg: '{{ node_test_output.stdout }}'
