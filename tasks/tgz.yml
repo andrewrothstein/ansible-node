@@ -1,8 +1,8 @@
 ---
-- name: checking for existing install in {{ node_install_dir }}
+- name: checking for existing install in {{ node_install_bin_dir }}
   become: yes
   stat:
-    path: '{{ node_install_dir }}'
+    path: '{{ node_install_bin_dir }}'
   changed_when: False
   register: node_binary
 - when: not node_binary.stat.exists
@@ -23,7 +23,7 @@
         remote_src: yes
         src: '{{ node_tmp_tgz }}'
         dest: '{{ node_parent_install_dir }}'
-        creates: '{{ node_install_dir }}'
+        creates: '{{ node_install_bin_dir }}'
 
   always:
     - name: cleanup {{ node_tmp_tgz }}
@@ -33,21 +33,11 @@
         path: '{{ node_tmp_tgz }}'
         state: absent
 
-- name: linking {{ node_link_dir }} to {{ node_install_dir }}
+- name: linking executables in {{ node_link_dir }} to {{ node_install_bin_dir }}
   become: yes
   become_user: root
+  with_items: '{{ node_exes }}'
   file:
-    src: '{{ node_install_dir }}'
-    dest: '{{ node_link_dir }}'
+    src: '{{ node_install_bin_dir }}/{{ item }}'
+    dest: '{{ node_link_dir }}/{{ item }}'
     state: link
-- name: adding node to the default path...
-  become: yes
-  become_user: root
-  with_items:
-    - f: node.sh
-      d: /etc/profile.d
-      m: '0644'
-  template:
-    src: '{{ item.f }}.j2'
-    dest: '{{ item.d }}/{{ item.f }}'
-    mode: '{{ item.m }}'

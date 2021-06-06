@@ -8,6 +8,11 @@ node_mirror: https://nodejs.org/dist
 
 node_parent_install_dir: /usr/local
 
+node_exes:
+  - node
+  - npm
+  - npx
+
 node_checksums:
   # http://nodejs.org/dist/v8.8.0/SHASUMS256.txt
   '8.8.0':

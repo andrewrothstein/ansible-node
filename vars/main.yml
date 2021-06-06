@@ -8,5 +8,5 @@ node_tgz_url: '{{ node_mirror }}/v{{ node_ver }}/{{ node_tgz }}'
 
 node_checksum: '{{ node_checksums[node_ver][node_platform] }}'
 
-node_install_dir: '{{ node_parent_install_dir }}/{{ node_name }}'
-node_link_dir: '{{ node_parent_install_dir }}/node'
+node_install_bin_dir: '{{ node_parent_install_dir }}/{{ node_name }}/bin'
+node_link_dir: '{{ node_parent_install_dir }}/bin'
