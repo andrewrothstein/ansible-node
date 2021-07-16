@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 set -e
 DIR=~/Downloads
-MIRROR=http://nodejs.org/dist
+MIRROR=https://nodejs.org/dist
 
 dl()
 {
@@ -42,4 +42,4 @@ dl_ver() {
     dl $ver $lchecksums win x86 zip
 }
 
-dl_ver ${1:-16.4.2}
+dl_ver ${1:-16.5.0}
