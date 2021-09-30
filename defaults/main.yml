@@ -1,6 +1,6 @@
 ---
 # defaults file for node
-node_ver: 16.9.1
+node_ver: 16.10.0
 node_os: linux
 node_arch: x64
 
@@ -2218,3 +2218,23 @@ node_checksums:
     win-x64: sha256:44b36846f45c3599d4230008cc5064d3e72405eea26268731b2374fe4ab998ed
     # https://nodejs.org/dist/v16.9.1/node-v16.9.1-win-x86.zip
     win-x86: sha256:20f54cd8bfefd9a440aed5975af9d9c64a83bfd8e2b9352f4b23cb07ca57c86c
+  # https://nodejs.org/dist/v16.10.0/SHASUMS256.txt
+  '16.10.0':
+    # https://nodejs.org/dist/v16.10.0/node-v16.10.0-aix-ppc64.tar.gz
+    aix-ppc64: sha256:2142ee042206c5064b19fc034d8d03c7291d0177341a3b55f80d0a3b44ee32de
+    # https://nodejs.org/dist/v16.10.0/node-v16.10.0-darwin-x64.tar.gz
+    darwin-x64: sha256:66a42483908aabd6d5fb19e9f3cebd6927dc84206b75b8801d9e010815083906
+    # https://nodejs.org/dist/v16.10.0/node-v16.10.0-linux-arm64.tar.gz
+    linux-arm64: sha256:2675ca64c50badd609907b2149f7c021cce52248e08f984a4102d4f390794f57
+    # https://nodejs.org/dist/v16.10.0/node-v16.10.0-linux-armv7l.tar.gz
+    linux-armv7l: sha256:2d2c63fc7f974419437194f854204a2728095dbe124d1a6f782f3ac6201d8e02
+    # https://nodejs.org/dist/v16.10.0/node-v16.10.0-linux-ppc64le.tar.gz
+    linux-ppc64le: sha256:3fa8d29fec4db4097968e1023e9c82aad866a09e96d3201efc213902d5b85059
+    # https://nodejs.org/dist/v16.10.0/node-v16.10.0-linux-s390x.tar.gz
+    linux-s390x: sha256:a7197fd1e3fad30ea9f40fccddce16cc39a155a48c7f41f0ea04024ec793683d
+    # https://nodejs.org/dist/v16.10.0/node-v16.10.0-linux-x64.tar.gz
+    linux-x64: sha256:bca7f42ea3e61938cc28868614bb37908111b9ff190fe8022fa9954651b5665d
+    # https://nodejs.org/dist/v16.10.0/node-v16.10.0-win-x64.zip
+    win-x64: sha256:269ef35a91e7e8ce107ed09ca17e70d2feb448cf46ed6dbda86ac95cb90c5344
+    # https://nodejs.org/dist/v16.10.0/node-v16.10.0-win-x86.zip
+    win-x86: sha256:4f00121f999d681a20a83f51683a5acd736d983d866bef86689c54865b34b861
