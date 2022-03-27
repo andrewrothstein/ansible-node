@@ -33,6 +33,7 @@ dl_ver() {
     printf "  '%s':\n" $ver
     dl $ver $lchecksums aix ppc64 tar.gz
     dl $ver $lchecksums darwin x64 tar.gz
+    dl $ver $lchecksums darwin arm64 tar.gz
     dl $ver $lchecksums linux arm64 tar.gz
     dl $ver $lchecksums linux armv7l tar.gz
     dl $ver $lchecksums linux ppc64le tar.gz
@@ -42,4 +43,4 @@ dl_ver() {
     dl $ver $lchecksums win x86 zip
 }
 
-dl_ver ${1:-17.7.2}
+dl_ver ${1:-17.8.0}
