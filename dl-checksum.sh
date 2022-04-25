@@ -25,7 +25,7 @@ dl_ver() {
 
     if [ ! -e $lchecksums ];
     then
-        wget -q -O $lchecksums $rchecksums
+        curl -sSLf -o $lchecksums $rchecksums
     fi
 
 
@@ -40,7 +40,6 @@ dl_ver() {
     dl $ver $lchecksums linux s390x tar.gz
     dl $ver $lchecksums linux x64 tar.gz
     dl $ver $lchecksums win x64 zip
-    dl $ver $lchecksums win x86 zip
 }
 
-dl_ver ${1:-17.8.0}
+dl_ver ${1:-18.0.0}
