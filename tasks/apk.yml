@@ -5,4 +5,4 @@
       - nodejs
       - npm
     state: present
-    update_cache: no
+    update_cache: false

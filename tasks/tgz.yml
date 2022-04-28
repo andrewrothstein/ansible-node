@@ -1,14 +1,14 @@
 ---
 - name: checking for existing install in {{ node_install_bin_dir }}
-  become: yes
+  become: true
   stat:
     path: '{{ node_install_bin_dir }}'
-  changed_when: False
+  changed_when: false
   register: node_binary
 - when: not node_binary.stat.exists
   block:
     - name: downloading {{ node_tgz_url }}
-      become: yes
+      become: true
       become_user: root
       get_url:
         url: '{{ node_tgz_url }}'
@@ -17,24 +17,24 @@
         checksum: '{{ node_checksum }}'
 
     - name: unarchiving into {{ node_parent_install_dir }}
-      become: yes
+      become: true
       become_user: root
       unarchive:
-        remote_src: yes
+        remote_src: true
         src: '{{ node_tmp_tgz }}'
         dest: '{{ node_parent_install_dir }}'
         creates: '{{ node_install_bin_dir }}'
 
   always:
     - name: cleanup {{ node_tmp_tgz }}
-      become: yes
+      become: true
       become_user: root
       file:
         path: '{{ node_tmp_tgz }}'
         state: absent
 
 - name: linking executables in {{ node_link_dir }} to {{ node_install_bin_dir }}
-  become: yes
+  become: true
   become_user: root
   with_items: '{{ node_exes }}'
   file:
