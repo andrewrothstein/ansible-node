@@ -1,6 +1,6 @@
 ---
 # defaults file for node
-node_ver: 19.1.0
+node_ver: 19.2.0
 node_arch_map:
   aarch64: arm64
   arm64: arm64
@@ -2925,3 +2925,23 @@ node_checksums:
     linux-x64: sha256:1a42a67beb3e07289da2ad22a58717801c6ab80d09668e2da6b1c537b2a80a5e
     # https://nodejs.org/dist/v19.1.0/node-v19.1.0-win-x64.zip
     win-x64: sha256:9ca998da2063fd5b374dc889ee1937ada5a1e1f4fb50b5f989412dda7c6bb357
+  # https://nodejs.org/dist/v19.2.0/SHASUMS256.txt
+  '19.2.0':
+    # https://nodejs.org/dist/v19.2.0/node-v19.2.0-aix-ppc64.tar.gz
+    aix-ppc64: sha256:8b5ab2cec5a20df8e99242b248a6345f4a393facd29a5b077ba6d7dafd629b4c
+    # https://nodejs.org/dist/v19.2.0/node-v19.2.0-darwin-x64.tar.gz
+    darwin-x64: sha256:e3cfa8f82ea334c3c23bc1d9c9c3a87c4ffff8d29eab17e6bb9d53008103b08b
+    # https://nodejs.org/dist/v19.2.0/node-v19.2.0-darwin-arm64.tar.gz
+    darwin-arm64: sha256:394341380de1b1c6e5a5ab8af86e08e8f097ba7d101d4315bdd7cdcf3b306467
+    # https://nodejs.org/dist/v19.2.0/node-v19.2.0-linux-arm64.tar.gz
+    linux-arm64: sha256:5010dc1b0e6417c61906de1a8d05e752c23d0493e5f419a59e8bf959a2f52628
+    # https://nodejs.org/dist/v19.2.0/node-v19.2.0-linux-armv7l.tar.gz
+    linux-armv7l: sha256:2bd6ef5e75a750c835c810fc6d2156fd719901732f4170ea86d3da24dcff6a27
+    # https://nodejs.org/dist/v19.2.0/node-v19.2.0-linux-ppc64le.tar.gz
+    linux-ppc64le: sha256:b27f78c5d8c70185373ef520f04192f998be700f10d93c0cc876e02e93cf48e5
+    # https://nodejs.org/dist/v19.2.0/node-v19.2.0-linux-s390x.tar.gz
+    linux-s390x: sha256:e83d0f4e9db0dfea79901bedd40b1f502935a1acad7d8209fa3ff0d153730bcf
+    # https://nodejs.org/dist/v19.2.0/node-v19.2.0-linux-x64.tar.gz
+    linux-x64: sha256:64cad7fb9ff6c0bc85b7f58275f23177a11c820240a0a7cb036e764a98c3527e
+    # https://nodejs.org/dist/v19.2.0/node-v19.2.0-win-x64.zip
+    win-x64: sha256:689ca4285fb924dbd6e26adb156b3df0178a20f0e9a9cea59eca79d34c8dd9da
