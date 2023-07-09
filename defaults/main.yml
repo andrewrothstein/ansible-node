@@ -1,6 +1,6 @@
 ---
 # defaults file for node
-node_ver: 20.2.0
+node_ver: 20.3.0
 node_arch_map:
   aarch64: arm64
   arm64: arm64
@@ -3165,3 +3165,23 @@ node_checksums:
     linux-x64: sha256:cb0eff87d37f0df1dcd176a58b9ed0be3b5c08a02fe133a5dffd11dcae29626b
     # https://nodejs.org/dist/v20.2.0/node-v20.2.0-win-x64.zip
     win-x64: sha256:eda20d37da0c6629414121dc70c639944e0cfce37f0c5351a9c3141bdb80a4ff
+  # https://nodejs.org/dist/v20.3.0/SHASUMS256.txt
+  '20.3.0':
+    # https://nodejs.org/dist/v20.3.0/node-v20.3.0-aix-ppc64.tar.gz
+    aix-ppc64: sha256:45375449725aa845f605a77e6ff88886a2f73294183e82ea8d38e0c24722f853
+    # https://nodejs.org/dist/v20.3.0/node-v20.3.0-darwin-x64.tar.gz
+    darwin-x64: sha256:24293d0217f009cbf821e5f399dcf72c1df2cb27f70cb1f05fd07af2ee6ad2c2
+    # https://nodejs.org/dist/v20.3.0/node-v20.3.0-darwin-arm64.tar.gz
+    darwin-arm64: sha256:25d5db6192ebcb7013f4138c71a7c423d0da33f28149d28b3b6df7c00527dd40
+    # https://nodejs.org/dist/v20.3.0/node-v20.3.0-linux-arm64.tar.gz
+    linux-arm64: sha256:c3476b293f3b26a14163184171896ef17dc33ee26a208256170556b493a2b2c5
+    # https://nodejs.org/dist/v20.3.0/node-v20.3.0-linux-armv7l.tar.gz
+    linux-armv7l: sha256:25a06a1477cd5c91e4b69d86bae03890d80e07c996c677032de4278fa389eed3
+    # https://nodejs.org/dist/v20.3.0/node-v20.3.0-linux-ppc64le.tar.gz
+    linux-ppc64le: sha256:36ccc8c274d00a5eb195477b62cacc9aec0e1f56a6965b07c9de7f28a67ca52b
+    # https://nodejs.org/dist/v20.3.0/node-v20.3.0-linux-s390x.tar.gz
+    linux-s390x: sha256:02e287c74218d6418af5173a641f8b78d7539e11e96c2af4bf946437c9833e0c
+    # https://nodejs.org/dist/v20.3.0/node-v20.3.0-linux-x64.tar.gz
+    linux-x64: sha256:80238ee1a9dee6b0d5d1081503c6fdd1c7f81bdf4ca6abd90aa5a568712a2eaa
+    # https://nodejs.org/dist/v20.3.0/node-v20.3.0-win-x64.zip
+    win-x64: sha256:43be53f9f4d6fa19e27efdb724e10cbdf3c7abfaebe0d852af62fc80c6f465a2
