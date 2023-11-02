@@ -15,6 +15,7 @@
         dest: '{{ node_tmp_tgz }}'
         mode: 0644
         checksum: '{{ node_checksum }}'
+        timeout: '{{ node_dl_timeout }}'
 
     - name: unarchiving into {{ node_parent_install_dir }}
       become: true

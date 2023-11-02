@@ -10,7 +10,7 @@ node_arch_map:
   x86_64: x64
 
 node_mirror: https://nodejs.org/dist
-
+node_dl_timeout: 60
 node_parent_install_dir: /usr/local
 
 node_exes:
