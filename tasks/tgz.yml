@@ -20,7 +20,7 @@
     - name: Unarchiving into {{ node_parent_install_dir }}
       become: true
       become_user: root
-      unarchive:
+      ansible.builtin.unarchive:
         remote_src: true
         src: '{{ node_tmp_tgz }}'
         dest: '{{ node_parent_install_dir }}'
@@ -30,7 +30,7 @@
     - name: Cleanup {{ node_tmp_tgz }}
       become: true
       become_user: root
-      file:
+      ansible.builtin.file:
         path: '{{ node_tmp_tgz }}'
         state: absent
 
@@ -38,7 +38,7 @@
   become: true
   become_user: root
   with_items: '{{ node_exes }}'
-  file:
+  ansible.builtin.file:
     src: '{{ node_install_bin_dir }}/{{ item }}'
     dest: '{{ node_link_dir }}/{{ item }}'
     state: link

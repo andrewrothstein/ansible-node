@@ -1,8 +1,9 @@
 ---
-- include_role:
+- name: Install unarchivedeps
+  ansible.builtin.include_role:
     name: andrewrothstein.unarchivedeps
 - name: resolve platform specific vars
-  include_vars: '{{ item }}'
+  ansible.builtin.include_vars: '{{ item }}'
   with_first_found:
     - files:
         - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
@@ -12,4 +13,4 @@
       paths:
         - '{{ role_path }}/vars'
 
-- include_tasks: '{{ node_installer | default("tgz") }}.yml'
+- ansible.builtin.include_tasks: '{{ node_installer | default("tgz") }}.yml'
