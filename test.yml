@@ -1,9 +1,12 @@
 ---
 - hosts: all
-  roles:
-    - role: '{{ playbook_dir }}'
   tasks:
-    - command: sh -l -c 'node --version'
+    - name: Installing nodejs
+      ansible.builtin.include_role:
+        name: '{{ playbook_dir }}'
+    - name: Executing "node --version"
+      ansible.builtin.command: sh -l -c 'node --version'
       register: node_test_output
-    - debug:
+    - name: Node --version
+      ansible.builtin.debug:
         msg: '{{ node_test_output.stdout }}'

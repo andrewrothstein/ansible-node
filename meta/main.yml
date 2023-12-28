@@ -10,10 +10,10 @@ galaxy_info:
   platforms:
     - name: Alpine
       versions:
-        - any
+        - all
     - name: ArchLinux
       versions:
-        - any
+        - all
     - name: Debian
       versions:
         - bookworm

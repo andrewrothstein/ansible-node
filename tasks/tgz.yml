@@ -1,23 +1,23 @@
 ---
-- name: checking for existing install in {{ node_install_bin_dir }}
+- name: Checking for existing install in {{ node_install_bin_dir }}
   become: true
-  stat:
+  ansible.builtin.stat:
     path: '{{ node_install_bin_dir }}'
   changed_when: false
   register: node_binary
 - when: not node_binary.stat.exists
   block:
-    - name: downloading {{ node_tgz_url }}
+    - name: Downloading {{ node_tgz_url }}
       become: true
       become_user: root
-      get_url:
+      ansible.builtin.get_url:
         url: '{{ node_tgz_url }}'
         dest: '{{ node_tmp_tgz }}'
-        mode: 0644
+        mode: '644'
         checksum: '{{ node_checksum }}'
         timeout: '{{ node_dl_timeout }}'
 
-    - name: unarchiving into {{ node_parent_install_dir }}
+    - name: Unarchiving into {{ node_parent_install_dir }}
       become: true
       become_user: root
       unarchive:
@@ -27,14 +27,14 @@
         creates: '{{ node_install_bin_dir }}'
 
   always:
-    - name: cleanup {{ node_tmp_tgz }}
+    - name: Cleanup {{ node_tmp_tgz }}
       become: true
       become_user: root
       file:
         path: '{{ node_tmp_tgz }}'
         state: absent
 
-- name: linking executables in {{ node_link_dir }} to {{ node_install_bin_dir }}
+- name: Linking executables in {{ node_link_dir }} to {{ node_install_bin_dir }}
   become: true
   become_user: root
   with_items: '{{ node_exes }}'
