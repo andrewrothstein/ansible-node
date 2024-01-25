@@ -5,7 +5,8 @@
     path: '{{ node_install_bin_dir }}'
   changed_when: false
   register: node_binary
-- when: not node_binary.stat.exists
+- name: Downloading and installing node
+  when: not node_binary.stat.exists
   block:
     - name: Downloading {{ node_tgz_url }}
       become: true

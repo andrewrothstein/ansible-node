@@ -1,10 +1,10 @@
 ---
 - name: Brew install
-  homebrew:
+  ansible.builtin.homebrew:
     name: node
     state: present
 
 - name: Brew link
-  homebrew:
+  ansible.builtin.homebrew:
     name: node
     state: linked

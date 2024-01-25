@@ -1,6 +1,6 @@
 ---
 - name: Installing nodjs/npm with apk
-  apk:
+  ansible.builtin.apk:
     name:
       - nodejs
       - npm

@@ -1,11 +1,13 @@
 ---
-- hosts: all
+- name: Testing andrewrothstein.node
+  hosts: all
   tasks:
-    - name: Installing nodejs
+    - name: Installing andrewrothstein.node
       ansible.builtin.include_role:
         name: '{{ playbook_dir }}'
     - name: Executing "node --version"
       ansible.builtin.command: sh -l -c 'node --version'
+      changed_when: false
       register: node_test_output
     - name: Node --version
       ansible.builtin.debug:

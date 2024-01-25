@@ -13,4 +13,5 @@
       paths:
         - '{{ role_path }}/vars'
 
-- ansible.builtin.include_tasks: '{{ node_installer | default("tgz") }}.yml'
+- name: using installer {{ node_installer | default("tgz") }}
+  ansible.builtin.include_tasks: '{{ node_installer | default("tgz") }}.yml'
