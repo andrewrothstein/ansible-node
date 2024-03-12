@@ -1,6 +1,6 @@
 ---
 # defaults file for node
-node_ver: 21.6.2
+node_ver: 21.7.0
 node_arch_map:
   aarch64: arm64
   arm64: arm64
@@ -3585,3 +3585,23 @@ node_checksums:
     linux-x64: sha256:d4504dcbcd1a9ded42d86bc20a7e72d6d631e49dcf3f9c849c3b51b12f3f4544
     # https://nodejs.org/dist/v21.6.2/node-v21.6.2-win-x64.zip
     win-x64: sha256:99bac3a930bd487e53c5a35b3e2f5ec102053316d7eb89f93273d916d57353a2
+  # https://nodejs.org/dist/v21.7.0/SHASUMS256.txt
+  '21.7.0':
+    # https://nodejs.org/dist/v21.7.0/node-v21.7.0-aix-ppc64.tar.gz
+    aix-ppc64: sha256:c31d5b60c4a284c6855bd468d4aae4436a16b351362b2971d3c0db2a471d3f24
+    # https://nodejs.org/dist/v21.7.0/node-v21.7.0-darwin-x64.tar.gz
+    darwin-x64: sha256:3f81adca80b523b413e26f03f855f4a2ae52d9af20f0cda2e259dd26a0608607
+    # https://nodejs.org/dist/v21.7.0/node-v21.7.0-darwin-arm64.tar.gz
+    darwin-arm64: sha256:f48ad51cf3c2814bbf61c8c26efd810e5e22dcac980786fd7ac5b54365233d2c
+    # https://nodejs.org/dist/v21.7.0/node-v21.7.0-linux-arm64.tar.gz
+    linux-arm64: sha256:520a3e5c83a05a782b1f4959f150c2fdc03e2ea056e855ef6bbb74f6ccf7aa7d
+    # https://nodejs.org/dist/v21.7.0/node-v21.7.0-linux-armv7l.tar.gz
+    linux-armv7l: sha256:723abb32135ad4baa6e9671447a72f5c9a5bfc681fc540b0e4864e965171b6ed
+    # https://nodejs.org/dist/v21.7.0/node-v21.7.0-linux-ppc64le.tar.gz
+    linux-ppc64le: sha256:c2290cb35b11ee2b0f0ae34ad3c8372652688ff2dc3d9a89ada46c2b84ea5dda
+    # https://nodejs.org/dist/v21.7.0/node-v21.7.0-linux-s390x.tar.gz
+    linux-s390x: sha256:90b8678ed113950613edeae5eaf298cf795c72005fac6ffd9b7fbb90ddd86738
+    # https://nodejs.org/dist/v21.7.0/node-v21.7.0-linux-x64.tar.gz
+    linux-x64: sha256:0fce039e2b6af00766492127a49f959ae92ed22fede4c49e9a8c2543aadbd6e2
+    # https://nodejs.org/dist/v21.7.0/node-v21.7.0-win-x64.zip
+    win-x64: sha256:204de88f4073b08ae3dbe4c412b071eee565fc681e163be205d5cc88065f0322
