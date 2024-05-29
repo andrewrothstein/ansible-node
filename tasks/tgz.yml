@@ -18,6 +18,9 @@
         checksum: '{{ node_checksum }}'
         timeout: '{{ node_dl_timeout }}'
 
+    - name: Install unarchivedeps
+      ansible.builtin.include_role:
+        name: andrewrothstein.unarchivedeps
     - name: Unarchiving into {{ node_parent_install_dir }}
       become: true
       become_user: root
