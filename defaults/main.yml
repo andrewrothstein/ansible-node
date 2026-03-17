@@ -3845,6 +3845,25 @@ node_checksums:
     linux-x64: sha256:4f862bab52039835efbe613b532238b6e4dde98d139a34e6923193e073438b13
     # https://nodejs.org/dist/v22.11.0/node-v22.11.0-win-x64.zip
     win-x64: sha256:905373a059aecaf7f48c1ce10ffbd5334457ca00f678747f19db5ea7d256c236
+  # https://nodejs.org/dist/v22.22.1/SHASUMS256.txt
+  '22.22.1':
+    # https://nodejs.org/dist/v22.22.1/node-v22.22.1-aix-ppc64.tar.gz
+    aix-ppc64: sha256:dd75425fe7875b04fbdbbeeead9bb271daacff84b75d0ba1d4f6ccbee515eae1
+    # https://nodejs.org/dist/v22.22.1/node-v22.22.1-darwin-x64.tar.gz
+    darwin-x64: sha256:07b13722d558790fca20bb1ecf61bde24b7a4863111f7be77fc57251a407359a
+    # https://nodejs.org/dist/v22.22.1/node-v22.22.1-darwin-arm64.tar.gz
+    darwin-arm64: sha256:679ad4966339e4ef4900f57996714864e4211b898825bb840c3086c419fbcef2
+    # https://nodejs.org/dist/v22.22.1/node-v22.22.1-linux-arm64.tar.gz
+    linux-arm64: sha256:1d1690e9aba47e887a275abc6d8f7317e571a0700deaef493f768377e99155f5
+    # https://nodejs.org/dist/v22.22.1/node-v22.22.1-linux-armv7l.tar.gz
+    linux-armv7l: sha256:2b592d21609ef299d1e3918bb806ed62ba715d4109b0f8ec11b132af9fa42d70
+    # https://nodejs.org/dist/v22.22.1/node-v22.22.1-linux-ppc64le.tar.gz
+    linux-ppc64le: sha256:18f9ab7da4f3a04ec213590b14e5d78b60bfb5c6b8bf53541e7eaf1adf9d270a
+    # https://nodejs.org/dist/v22.22.1/node-v22.22.1-linux-s390x.tar.gz
+    linux-s390x: sha256:6128f9d54a1b43258144d7ac074a82d3b6c96d8e9cb3a8e14e4722a66990adbe
+    # https://nodejs.org/dist/v22.22.1/node-v22.22.1-linux-x64.tar.gz
+    linux-x64: sha256:07c8aafa60644fb81adefa1ee7da860eb1920851ffdc9a37020ab0be47fbc10e
+
   # https://nodejs.org/dist/v23.2.0/SHASUMS256.txt
   '23.2.0':
     # https://nodejs.org/dist/v23.2.0/node-v23.2.0-aix-ppc64.tar.gz
