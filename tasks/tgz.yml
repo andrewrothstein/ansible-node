@@ -5,6 +5,13 @@
     path: '{{ node_install_bin_dir }}'
   changed_when: false
   register: node_binary
+- name: Installing OS pkg deps
+  become: true
+  become_user: root
+  when: node_dep_pkgs | default([]) | length > 0
+  ansible.builtin.package:
+    name: '{{ node_dep_pkgs }}'
+    state: present
 - name: Downloading and installing node
   when: not node_binary.stat.exists
   block:
