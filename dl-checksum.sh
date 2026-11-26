@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 set -e
-DIR=~/Downloads
+DIR=$(mktemp -d)
+trap 'rm -rf "$DIR"' EXIT
 MIRROR=https://nodejs.org/dist
 
 dl()
@@ -14,8 +15,15 @@ dl()
     local file=node-v${ver}-${platform}.${archive_type}
     local url=$MIRROR/v${ver}/$file
 
-    printf "    # %s\n" $url
-    printf "    %s: sha256:%s\n" $platform `fgrep $file $lchecksums | awk '{print $1}'`
+    local sum
+    sum=$(awk -v f="$file" '$2 == f || $2 == "*" f {print $1}' "$lchecksums")
+    if ! printf '%s' "$sum" | grep -Eq '^[0-9a-f]{64}$'
+    then
+        echo "bad or missing checksum for $file: '$sum'" >&2
+        exit 1
+    fi
+    printf "    # %s\n" "$url"
+    printf "    %s: sha256:%s\n" "$platform" "$sum"
 }
 
 dl_ver() {
@@ -23,10 +31,7 @@ dl_ver() {
     local lchecksums=$DIR/node_${ver}_SHASUMS256.txt
     local rchecksums=$MIRROR/v${ver}/SHASUMS256.txt
 
-    if [ ! -e $lchecksums ];
-    then
-        curl -sSLf -o $lchecksums $rchecksums
-    fi
+    curl -fsSL --proto '=https' --tlsv1.2 -o "$lchecksums" "$rchecksums"
 
 
     printf "  # %s\n" $rchecksums
@@ -41,4 +46,4 @@ dl_ver() {
     dl $ver $lchecksums win x64 zip
 }
 
-dl_ver ${1:-24.8.0}
+dl_ver ${1:-26.13.1}
